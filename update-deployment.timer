@@ -1,8 +1,8 @@
 [Unit]
-Description=Timer para revision de cambios
+Description=Timer para revisión de cambios
 
 [Timer]
-OnCalendar=*-*-* *:00:00
+OnUnitActiveSec=30
 Unit=update-deployment.service
 
 [Install]

@@ -1,0 +1,15 @@
+[Unit]
+Description=My Little Server
+
+[Service]
+ExecStart=/usr/bin/node /home/alexander/lab/index.js
+WorkingDirectory=/home/alexander/lab/
+RestartSec=10
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=nodejs-my-server-example
+
+[Install]
+WantedBy=multi-user.target
+

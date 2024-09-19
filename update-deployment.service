@@ -1,6 +1,10 @@
 [Unit]
-Description="Actualiza el repo en la rama Deployment"
+Description="Actualiza el repo en la rama deployment"
 
 [Service]
-Type=oneshot
-ExecStart=/home/alexander/lab/update_deployment.sh
+Type=simple
+ExecStart=/home/alexander/lab/update-deployment.sh
+WorkingDirectory=/home/alexander/lab/
+
+[Install]
+WantedBy=multi-user.target
