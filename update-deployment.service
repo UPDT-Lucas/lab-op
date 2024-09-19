@@ -1,0 +1,6 @@
+[Unit]
+Description="Actualiza el repo en la rama Deployment"
+
+[Service]
+Type=oneshot
+ExecStart=/home/alexander/lab/update_deployment.sh
