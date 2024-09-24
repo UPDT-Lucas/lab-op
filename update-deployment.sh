@@ -16,6 +16,7 @@ if [ "$LOCAL_COMMIT" != "$REMOTE_COMMIT" ]; then
    
    sudo systemctl daemon-reload
    sudo systemctl restart "$SERVICE_NAME"
+   sudo systemctl restart myserver.service
 else
    echo "No hay cambios en la rama"
 fi
